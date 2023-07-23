@@ -9,7 +9,7 @@ header{
     color:#ffd700
 }
 
-h3,h4{
+h3,h4, .cName, b{
     color: #ff7300;
 }
 
@@ -18,13 +18,29 @@ footer{
     color: #6a9955;
 }
 
-table {
+form input ,form textarea{
+    background-color: #6f6f6f ;
+    color:#ffd700
+}
+
+
+body table{
+    border: 2px solid #ff7300;
+}
+
+body td, body th {
+    border: 1px solid #ffd700;
+}
+
+footer table {
     border: 2px solid #456338; 
   }
   
-  td, th {
+footer td, footer th {
     border: 1px solid #456338; 
   }
+
+
 
 a,span{
     

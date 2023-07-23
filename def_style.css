@@ -1,39 +1,150 @@
 body{
-    margin: 0;
-    margin-top: 160px;
+    margin-top: 20vh;
+    margin-left: 10vw;
+    width: 90%;
+    z-index: 50;
+    
 }
 
-article{
-    margin-left: 50px;
-    padding: 2.5%;
+form{
+    padding: 10px;
+}
+
+body article{
+    font-size: 2vmin;
+}
+
+header h2{
+    font-size: 3vh;
+   
+}
+article ,form{
+    padding-left: 3vw;
+    width: 85vw;
+}
+
+article li::after , form label::before ,form label::after{
+    content: '\A'; 
+    white-space: pre; 
+    display: block;
 }
 
 header{
-    text-align: center;
+    height: 17%;
     position: fixed;
+    margin-left: 10vw;
+    width: 90vw;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 10px;
+    padding: 1px;
+    z-index: 100;
 }
-footer{
-    text-align: center;
-    width: 100%;
-    padding: 10px;
-    margin: 0;
-}
-
 table {
     border-collapse: collapse;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    font-size: 2vmin;
+}
+table img{
+    height: 6vmin;
 }
 
-td, th {padding: 8px; }
+footer{
+    text-align: center;
+    padding: 10px;
+}
 
+
+td, th {padding: 8px; }
 
 a,span{
     text-decoration: none;
 }
 
+
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+
+.lContent, .rContent ,  .rContentGr{
+    flex: 1;
+    margin: auto;
+}
+
+.rContent {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.cenContent{
+    margin: auto;
+}
+
+
+.gContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.gContainer video{
+    width: 25vmin;
+}
+
+
+.cName{
+    font-size: 3vh;
+}
+
+.miniflag{
+    display: block;
+    width: 6vh;
+}
+
+.sidenav {
+    height: 100%;
+    width: 10%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a ,.sidenav div {
+    padding: 6px 6px 6px 6px;
+    text-decoration: none;
+    font-size: 2vw;
+    color: #818181;
+    display: block;
+  }
+
+  .sidenav div{
+    background-color: rgb(0, 62, 0);
+    
+  }
+  
+  .sidenav a:hover {
+    color: #c1c1c1;
+  }
+  
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+  }
+
+  
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  
